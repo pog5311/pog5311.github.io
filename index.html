@@ -27,12 +27,19 @@
 #cattext {
     margin: auto
 }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+        }
 .center-video {
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width="100%";
+    height: 0%;
     padding-bottom: 56.25%;
 }
 .center-video iframe {
@@ -58,6 +65,7 @@ I am from The United Kingdom. <br>
     <script>
         document.getElementByID('Cat').src = 'https://raw.github.com/pog5311/pog5311.github.io//main/CatPic.jpeg' + new Date().getTime(); 
     </script>
+    <div class="video-container"
     <div class="center-video">
     <iframe src="https://www.youtube.com/embed/eKU7_YqzAOA" title="dRoP mE yOuR sMoKeS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
