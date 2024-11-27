@@ -61,7 +61,6 @@
             font-size: 18px;
             transition: 0.4s;
         }
-
         .accordion-button:after {
             content: '\002B'; /* Unicode character for "+" sign */
             color: #777;
@@ -69,11 +68,9 @@
             float: right;
             margin-left: 5px;
         }
-
         .accordion-button.active:after {
             content: "\2212"; /* Unicode character for "-" sign */
         }
-
         .accordion-content {
             padding: 0 18px;
             display: none;
@@ -118,11 +115,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const buttons = document.querySelectorAll('.accordion-button');
-        
             buttons.forEach(button => {
                 button.addEventListener('click', () => {
                     const content = button.nextElementSibling;
-        
                     button.classList.toggle('active');
                     if (content.style.display === 'block') {
                         content.style.display = 'none';
