@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  color: #d01c1f;
+}
+label, select {
+  display: block;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #222;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+#punish-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.punish {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #333;
+}
+.punish img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.punish-description {
+  margin-top: 10px;
+  font-size: 1rem;
+}

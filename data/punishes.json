@@ -1,0 +1,22 @@
+{
+  "anna": [
+    {
+      "filename": "ws2_punish.gif",
+      "description": "Punish Anna's WS+2 with Yoshi's df+1,2."
+    },
+    {
+      "filename": "f4_punish.gif",
+      "description": "Block and punish f+4 with b+1."
+    }
+  ],
+  "lidia": [
+    {
+      "filename": "qcf1_punish.gif",
+      "description": "Punish Lidia's qcf+1 with ws+4."
+    },
+    {
+      "filename": "b1_punish.gif",
+      "description": "Punish b+1 with df+2."
+    }
+  ]
+}
