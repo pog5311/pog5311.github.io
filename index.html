@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yoshimitsu Punish Guide</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
+<body class="dark">
+  <header>
     <h1>Yoshimitsu Punish Guide</h1>
+  </header>
 
-    <label for="character-select">Choose Opponent:</label>
-    <select id="character-select">
-      <option value="anna">Anna</option>
-      <option value="lidia">Lidia</option>
-    </select>
+  <main>
+    <div class="grid" id="punish-grid"></div>
+  </main>
 
-    <div id="punish-container"></div>
-  </div>
+  <template id="punish-card-template">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="move-name"></h2>
+        <p class="startup"></p>
+      </div>
+      <img class="gif-preview" />
+      <div class="tags"></div>
+      <button class="expand-button">Details</button>
+      <div class="card-details hidden">
+        <p class="character"></p>
+        <ul class="notes"></ul>
+      </div>
+    </div>
+  </template>
 
   <script src="scripts.js"></script>
 </body>
