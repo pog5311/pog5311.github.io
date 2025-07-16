@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #111;
@@ -27,6 +26,8 @@ select {
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: #fff;
+    position: relative;
 }
 .card:hover {
     background-color: #333;
@@ -34,6 +35,71 @@ select {
 .card img {
     max-width: 100%;
     border-radius: 8px;
+}
+.tags {
+    margin: 10px 0;
+}
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin: 2px;
+    color: #fff;
+}
+.tag.Launcher { background: #e57373; }
+.tag.CHPunish, .tag["CH Punish"] { background: #f06292; }
+.tag.High { background: #64b5f6; }
+.tag.Mid { background: #ffd54f; color: #222; }
+.tag.Low { background: #81c784; color: #222; }
+.tag.Safe { background: #81d4fa; color: #222; }
+.tag.Unsafe { background: #ffb74d; color: #222; }
+.tag.i15 { background: #ba68c8; }
+.tag.i6, .tag["i6"] { background: #81c784; color: #222; }
+.tag.Flash { background: #00bcd4; }
+.tag.Whiff { background: #bdbdbd; color: #222; }
+/* Add more .tag.{TagName} as needed */
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    display: flex; align-items: center; justify-content: center;
+}
+.modal-content {
+    background: #181818;
+    border-radius: 18px;
+    padding: 2em;
+    min-width: 350px;
+    max-width: 540px;
+    color: #fff;
+    position: relative;
+    overflow-y: auto;
+    max-height: 90vh;
+    box-shadow: 0 8px 32px #000b;
+}
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+.close-modal {
+    position: absolute;
+    top: 14px;
+    right: 24px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    user-select: none;
+}
+@media (max-width: 700px) {
+    .modal-content { max-width: 95vw; min-width: 0; }
+    .container { padding: 0;}
 }
 .details {
     display: none;
