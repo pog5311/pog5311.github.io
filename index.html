@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoshimitsu Punish Guide</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="dark">
-  <header>
+<body>
+  <div class="container">
     <h1>Yoshimitsu Punish Guide</h1>
-  </header>
-
-  <main>
-    <div class="grid" id="punish-grid"></div>
-  </main>
-
-  <template id="punish-card-template">
-    <div class="card">
-      <div class="card-header">
-        <h2 class="move-name"></h2>
-        <p class="startup"></p>
-      </div>
-      <img class="gif-preview" />
-      <div class="tags"></div>
-      <button class="expand-button">Details</button>
-      <div class="card-details hidden">
-        <p class="character"></p>
-        <ul class="notes"></ul>
-      </div>
-    </div>
-  </template>
-
-  <script src="scripts.js"></script>
+    <label for="character-select">Select Character:</label>
+    <select id="character-select">
+      <option value="">-- Choose a character --</option>
+      <option value="alisa">Alisa</option><option value="anna">Anna</option><option value="asuka">Asuka</option><option value="azucena">Azucena</option><option value="bryan">Bryan</option><option value="claudio">Claudio</option><option value="devil_jin">Devil Jin</option><option value="dragunov">Dragunov</option><option value="eddy">Eddy</option><option value="feng">Feng</option><option value="hwoarang">Hwoarang</option><option value="jack-8">Jack-8</option><option value="jin">Jin</option><option value="jun">Jun</option><option value="kazuya">Kazuya</option><option value="king">King</option><option value="kuma">Kuma</option><option value="lars">Lars</option><option value="law">Law</option><option value="lee">Lee</option><option value="leo">Leo</option><option value="leroy">Leroy</option><option value="lidia">Lidia</option><option value="lili">Lili</option><option value="nina">Nina</option><option value="paul">Paul</option><option value="raven">Raven</option><option value="reina">Reina</option><option value="shaheen">Shaheen</option><option value="steve">Steve</option><option value="victor">Victor</option><option value="xiaoyu">Xiaoyu</option><option value="yoshimitsu">Yoshimitsu</option><option value="zafina">Zafina</option>
+    </select>
+    <div id="move-cards" class="card-grid"></div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
