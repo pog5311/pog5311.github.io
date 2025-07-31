@@ -1,7 +1,7 @@
 [
   {
-    "name": "During Heat WCDF2~1",
-    "startup": "i10f",
+  "name": "During Heat WCDF2~1",
+  "startup": "i10f",
   "oB": "-9f",
   "oH": "+4cf",
   "CH": "+6df",
@@ -10,10 +10,10 @@
   "notes": [
     "i10f safe oB High Mid. Low risk (safe on block) high reward if you get a CH on the 2nd hit.",
     "Floor Breaks on floated opponents."
-    "description": "Punishable by Flash (i6).",
-    ],
-    "gif": "gifs/anna_WCDF21.gif"
-  },
+  ],
+  "description": "Punishable by Flash (i6).",
+  "gif": "gifs/anna_WCDF21.gif"
+}
   {
     "name": "1 2 1 2",
     "startup": "i6",
