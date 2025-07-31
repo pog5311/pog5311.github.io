@@ -1,7 +1,15 @@
 [
   {
     "name": "During Heat WCDF2~1",
-    "startup": "i6",
+    "startup": "i10f",
+  "oB": "-9f",
+  "oH": "+4cf",
+  "CH": "+6df",
+  "property": "High Mid",
+  "tags": ["Jabs", "Punisher", "Poke"],
+  "notes": [
+    "i10f safe oB High Mid. Low risk (safe on block) high reward if you get a CH on the 2nd hit.",
+    "Floor Breaks on floated opponents."
     "description": "Punishable by Flash (i6).",
     "gif": "gifs/anna_WCDF21.gif"
   },
