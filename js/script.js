@@ -64,15 +64,24 @@ function openModal(character, move) {
         );
     }
     const moveTags = move.tags || [];
-    const moveNotes = move.notes ? move.notes.map((n, i) => `<li>${n}</li>`).join('') : '';
     modalContent.innerHTML = `
         <span class="close-modal" onclick="closeModal()">&times;</span>
         <h2>${move.name}</h2>
         <img src="${move.gif}" alt="${move.name}">
+        <div class="startup-row">
+            <div><b>Startup</b><br>${move.startup || ""}</div>
+            <div><b>oB</b><br>${move.oB || ""}</div>
+            <div><b>oH</b><br>${move.oH || ""}</div>
+            <div><b>CH</b><br>${move.CH || ""}</div>
+        </div>
+        <div class="property-row">
+            <b>Property</b><br>
+            <span class="tag ${move.property ? move.property.replace(/\s/g,'') : ''}">${move.property || ""}</span>
+        </div>
         ${tagify(moveTags)}
-        <p><strong>Startup:</strong> ${move.startup || ''}</p>
-        <p>${move.description || ''}</p>
-        ${moveNotes ? `<ul>${moveNotes}</ul>` : ''}
+        <div class="notes">
+            ${move.notes ? move.notes.map((n, idx) => `<div><b>NOTE ${idx+1}</b>: ${n}</div>`).join('') : ''}
+        </div>
         ${punish ? `
             <hr>
             <h3>Yoshimitsu Punish</h3>
