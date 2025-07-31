@@ -105,3 +105,24 @@ select {
     display: none;
     margin-top: 10px;
 }
+.startup-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0 1em 0;
+    font-size: 1.05em;
+}
+.startup-row div {
+    flex: 1;
+    padding: 0 8px;
+    text-align: center;
+}
+.property-row {
+    margin-bottom: 0.5em;
+}
+.notes {
+    margin-top: 1.5em;
+}
+.notes div {
+    margin-bottom: 0.5em;
+    font-size: 0.98em;
+}
